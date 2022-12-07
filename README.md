@@ -13,15 +13,14 @@ If you want start a test with browserstack you need a browserstack account. Afte
 
 **to use cypress with mocha reporting:**
 
-Reports are currently stored in the "reports" directory. The directory can be changed here: **cypress.config.js** `reportDir`.
+Reports are currently stored in the **reports** directory. The directory can be changed here: **cypress.config.js** `reportDir`.
 
 ## Start Testing
 
 There are several ways to start a test.
 
 1. Open the Cypress interface: **npm run CY:open** <br>
-Here you can select a browser and a test case and run it locally. 
-
+Here you can select a browser and a test case and run it locally.
 :information_source: If you want you can use the recorder function to create new test cases.
 For this one you find some information about it [here](https://docs.cypress.io/guides/references/cypress-studio#Extending-a-Test). Start with chapter: **Step1-Run the spec**. The studio function is already switched on in this repository!
 
