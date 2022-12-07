@@ -29,8 +29,6 @@ All tests created in the E2E-directory will be run. After each test, correspondi
 It is also possible to start a specific test. To do this, the command **npm run CY:runLocal: your test name** must be entered. A corresponding script must first be created in **package.json**.
 
 3. Start a Browserstack Test: **npm run CY:runBrowserstack:all** <br>
-It is also possible to start a specific test. To do this, the command **npm run CY:runBrowserstack:your test name** must be entered. A corresponding script must first be created in **package.json**.
-
-:information_source: Runs with browserstack are only possible if you have created a browserstack account.
-
+It is also possible to start a specific test. To do this, the command **npm run CY:runBrowserstack:your test name** must be entered. A corresponding script must first be created in **package.json**.<br>
+:information_source: Runs with browserstack are only possible if you have created a browserstack account.<br>
 :information_source: Reports will be only saved by browserstack. There is no local report cache.
