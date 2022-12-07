@@ -11,7 +11,7 @@ Use it to create some specific tests with **cypress**. Excecute the created test
 
 **to use browserstack:**
 
-If you want to start a test with **browserstack** you need a **browserstack** account. After you have registered, you will receive authentification data. You have to enter this in the configuration file **browserstack.json** / `Username` and `access_key`. You can use several Browser and Devices with **Browserstack**. Set the Browser and Device in the same configuration file **browserstack.json** / `browsers`.
+If you want to start a test with **browserstack** you need a **browserstack** account. After you have registered, you will receive authentification data. You have to enter authentification data in the configuration file **browserstack.json** / `Username` and `access_key`. You can use several Browser and Devices with **Browserstack**. Set the Browser and Device in the same configuration file **browserstack.json** / `browsers`.
 
 **to use cypress with mocha reporting:**
 
@@ -27,8 +27,7 @@ Here you can select a browser and a test case and run it locally.<br>
 More information you can find  [here](https://docs.cypress.io/guides/references/cypress-studio#Extending-a-Test). Start with chapter: **Step1-Run the spec**. The **Cypress-Studio** function is already switched on in this repository!
 
 2. Start an **local** full automatically Cypress test: **npm run CY:runLocal:all** <br>
-All created tests in **E2E-directory** will be run. After each test, corresponding reports and videos are stored in the "reports" and "videos" directory. <br>
-It is also possible to start a specific test. To do this, the command **npm run CY:runLocal: your test name** must be entered. A corresponding script must first be created in **package.json**.
+All created tests in **E2E-directory** will be run. After each test, corresponding reports and videos are stored in the "reports" and "videos" directory. It is also possible to start a specific test. To do this, the command **npm run CY:runLocal: your test name** must be entered. A corresponding script must first be created in **package.json**.
 
 Coming soon:
 
