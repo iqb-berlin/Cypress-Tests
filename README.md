@@ -20,7 +20,7 @@ Reports are currently stored in the **reports** directory. The directory can be 
 There are several ways to start a test.
 
 1. Open the Cypress interface: **npm run CY:open** <br>
-Here you can select a browser and a test case and run it locally.
+Here you can select a browser and a test case and run it locally.<br>
 :information_source: If you want you can use the recorder function to create new test cases.
 For this one you find some information about it [here](https://docs.cypress.io/guides/references/cypress-studio#Extending-a-Test). Start with chapter: **Step1-Run the spec**. The studio function is already switched on in this repository!
 
