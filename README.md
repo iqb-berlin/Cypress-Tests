@@ -21,8 +21,8 @@ There are several ways to start a test.
 
 1. Open the Cypress interface: **npm run CY:open** <br>
 Here you can select a browser and a test case and run it locally.<br>
-:information_source: If you want you can use the recorder function to create new test cases.
-For this one you find some information about it [here](https://docs.cypress.io/guides/references/cypress-studio#Extending-a-Test). Start with chapter: **Step1-Run the spec**. The studio function is already switched on in this repository!
+:information_source: If you want you can use the recorder function to create new test cases. For this use the **cypress-studio** function.
+You find some more information about it [here](https://docs.cypress.io/guides/references/cypress-studio#Extending-a-Test). Start with chapter: **Step1-Run the spec**. The **cypress-studio** function is already switched on in this repository!
 
 2. Start an automatically executed local cypress test: **npm run CY:runLocal:all** <br>
 All tests created in the E2E-directory will be run. After each test, corresponding reports and videos are stored in the "Reports" and "Videos" directory. <br>
