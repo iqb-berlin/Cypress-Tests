@@ -5,7 +5,7 @@
 * install [git](https://git-scm.com/downloads)
 * install [node.js](https://nodejs.org/de/download/)
 * clone this repo
-* run **npm i** for install all dependencies
+* run [npm i]() for install all dependencies
 
 **to use browserstack:**
 
