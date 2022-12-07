@@ -1,0 +1,21 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "BSInit": "browserstack-cypress init",
+    "CY:open": "cypress open",
+    "CY:runLocal:all": "cypress run --spec cypress/e2e/*.cy.js ",
+    "CY:runLocal:spec1": "cypress run --spec cypress/e2e/spec1.cy.js ",
+    "CY:runBrowserstack:all": "browserstack-cypress run --sync",
+    "CY:runBrowserstack:spec1": "browserstack-cypress run --sync --specs cypress/e2e/spec1.cy.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserstack-cypress-cli": "^1.19.1",
+    "cypress": "10.8.0",
+    "cypress-mochawesome-reporter": "^3.2.3"
+  }
+}
