@@ -3,7 +3,7 @@ import {
 } from './utils';
 
 
-describe('FirstSpec', () => {
+describe('Example', () => {
 
   before(visitLoginPage);
 
