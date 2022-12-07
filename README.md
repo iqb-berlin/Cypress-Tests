@@ -1,4 +1,4 @@
-Use it to create some specific tests with **cypress**. Excecute the created tests with virtual devices on **browserstack** or with your **local** browser. In the folder: **Cypress/e2e** you can find a file with the name **spec1.cy.js**. Inside is an example testing code. Use this structure to create your spezific test and put a new **spec.cy.js** in the same folder. Run your new **spec** with a desired Browser **local** or on **browserstack**.
+Use it to create some specific tests with **cypress**. Excecute the created tests with virtual devices on **browserstack** or with your **local** browser. In the folder: **Cypress/e2e** you can find a file with the name **spec1.cy.js**. Inside is an example testing code. Use this structure to create your spezific test and add the new **spec.cy.js** in the same folder. Run your new **spec** with a desired Browser **local** or on **browserstack**.
 
 ## Preconditions
 
