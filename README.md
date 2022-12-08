@@ -1,11 +1,11 @@
-Use it to create some specific **E2E-tests** with **cypress**. Excecute the created tests with virtual devices on **browserstack** or with your **local** browser. In the folder: **Cypress/e2e** you can find a file with the name **spec1.cy.js**. Inside is an example testing code. Use this structure to create your spezific test and add the new **spec.cy.js** in the same folder. Run your new **spec** with a specific browser **local** or on **browserstack**.
+Use it to create some specific **E2E-tests** with **cypress**. Excecute the created tests with virtual devices on **browserstack** or with your **local** browser. In the folder: **Cypress/e2e** you can find a file with the name **spec1.cy.js**. Sample code is included in this specification. Use this code structure to create your spezific test and add the new **spec.cy.js** in the same folder. Run your new **spec** with a your preferred browser **local** or on **browserstack**.
 
 [Here](https://docs.cypress.io/guides/overview/why-cypress) you can find more information about cypress.<br>
 [Here](https://docs.cypress.io/examples/examples/recipes) you can find a lot of helpful examples.
 
 ## Preconditions
 
-* install your favorite IDE (for example Visual Studio Code)
+* install an IDE (for example Visual Studio Code)
 * install [git](https://git-scm.com/downloads)
 * install [node.js](https://nodejs.org/de/download/)
 * clone this repository
