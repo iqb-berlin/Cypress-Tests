@@ -32,7 +32,7 @@ More information you can find  [here](https://docs.cypress.io/guides/references/
 2. Start an **local** full automatically Cypress test: **npm run CY:runLocal:all** <br>
 All created tests in **E2E-directory** will be run. After each test, corresponding reports and videos are stored in the "reports" and "videos" directory. It is also possible to start a specific test. To do this, the command **npm run CY:runLocal: your test name** must be entered. A corresponding script must first be created in **package.json**.
 
-Coming soon:
+**Coming soon:**
 
 3. Start a **Browserstack** test: **npm run CY:runBrowserstack:all** <br>
 All created tests in **E2E-directory** will be run. It is also possible to start a specific test. To do this, the command **npm run CY:runBrowserstack:your test name** must be entered in your CLI. A corresponding script must first be created in **package.json**.<br>
