@@ -9,7 +9,8 @@
     "CY:runLocal:all": "cypress run --spec cypress/e2e/*.cy.js ",
     "CY:runLocal:spec1": "cypress run --spec cypress/e2e/spec1.cy.js ",
     "CY:runBrowserstack:all": "browserstack-cypress run --sync",
-    "CY:runBrowserstack:spec1": "browserstack-cypress run --sync --specs cypress/e2e/spec1.cy.js"
+    "CY:runBrowserstack:spec1": "browserstack-cypress run --sync --specs cypress/e2e/spec1.cy.js",
+   
   },
   "author": "",
   "license": "ISC",
