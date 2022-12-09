@@ -6,13 +6,14 @@
   "scripts": {
     "BSInit": "browserstack-cypress init",
     "CY:open": "cypress open",
-    "CY:runLocal:all": "cypress run --spec cypress/e2e/*.cy.js ",
-    "CY:runLocal:spec1": "cypress run --spec cypress/e2e/spec1.cy.js ",
+    "CY:runLocal:all": "cypress run --browser firefox --spec cypress/e2e/*.cy.js",
+    "CY:runLocal:spec1": "cypress run --browser firefox --spec cypress/e2e/spec1.cy.js",
     "CY:runBrowserstack:all": "browserstack-cypress run --sync",
-    "CY:runBrowserstack:spec1": "browserstack-cypress run --sync --specs cypress/e2e/spec1.cy.js",
+    "CY:runBrowserstack:spec1": "browserstack-cypress run --sync --specs cypress/e2e/spec1.cy.js"
    
   },
   "author": "",
+
   "license": "ISC",
   "dependencies": {
     "browserstack-cypress-cli": "^1.19.1",
