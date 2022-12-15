@@ -15,7 +15,7 @@ Dazu muss eine weitere Datei mit gleicher Endung dem Verzeichnis hinzugefügt we
 
 **Für die Benutzung mit Mocha-Reports:**
 
-Wird eine Testung lokal durchgeführt, werden alle Reports *Reports* Verzeichnis abgelegt. Es ist möglich ein anderes Verzeichnis anzugeben, dazu muss das gewünschte Verzeichnis hier angegeben werden: *cypress.config.js* `reportDir`.
+Wird eine Testung lokal durchgeführt, werden alle Berichte im *Reports* Verzeichnis abgelegt. Es ist möglich ein anderes Verzeichnis anzugeben, dazu muss das gewünschte Verzeichnis hier angegeben werden: *cypress.config.js* `reportDir`.
 
 **Für die Benutzung mit Browserstack:**
 
@@ -25,7 +25,7 @@ Bevor eine Testung gegen Browserstack durchgeführt werden kann, wird ein Konto 
 
 Starten eines lokalen Tests oder eines Browserstack Tests. Hierfür sind die folgenden Befehle zu verwenden:
 
-1. **Öffnen der Cypress Oberfläche**: `npm run CY:open`
+### Öffnen der Cypress Oberfläche: `npm run CY:open`
 
 Hier kann ein Browser und der programierte Testfall ausgewählt und gestartet werden.
 
@@ -33,13 +33,13 @@ Hier kann ein Browser und der programierte Testfall ausgewählt und gestartet we
 
 :information_source: Es werden nur zur Laufzeit Auswertungen (Testergebnisse) präsentiert, es findet keine dauerhafte Speicherung statt.
 
-2. **Starten eines lokalen automatischen Tests:** `npm run CY:runLocal:all`
+### Starten eines lokalen automatischen Tests: `npm run CY:runLocal:all`
 
 Alle Tests (Specs) im E2E-Verzeichnis werden ausgeführt. Nach jedem abgeschlossenen Test werden Berichte, Screenshots und Videos im Verzeichnis: *reports*, *videos* and *screenshots* gespeichert. Es ist auch möglich nur einen einzelne Test aus dem E2E-Verzeichnis zu starten. Hierfür wird der Befehl: `npm run CY:runLocal: your test name` eingegeben. Damit der gewünschte Test gestartet werden kann, ist dieser Test zuvor in der *package.json* / `scripts` plus des gewünschten Browsers anzugeben. 
 
-**Diese Funktion ist bald vorhanden:**
+### Starten eines Browserstack Tests: `npm run CY:runBrowserstack:all`
 
-3. **Starten eines Browserstack Tests:** `npm run CY:runBrowserstack:all`
+**Diese Funktion ist bald vorhanden!**
 
 Alle Tests (Specs) im E2E-Verzeichnis werden ausgeführt. Nach jedem abgeschlossenen Test werden Berichte, Screenshots und Videos bei Browserstack gespeichert. Es ist auch möglich nur einen einzelne Test aus dem E2E-Verzeichnis zu starten. Hierfür wird der Befehl:<br>
  `npm run CY:runBrowserstack:your test name` verwendet. Damit der gewünschte Test gestartet werden kann, ist dieser Test zuvor in der *package.json* / `scripts` plus des gewünschten Browsers anzugeben. 
