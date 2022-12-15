@@ -1,41 +1,49 @@
-Use it to create some specific **E2E-tests** with **cypress**. Excecute the created tests with virtual devices on **browserstack** or with your **local** browser. In the folder: **Cypress/e2e** you can find a file with the name **spec1.cy.js**. Sample code is included in this specification. Use this code structure to create your spezific test and add the new **spec.cy.js** in the same folder. Run your new **spec** with your preferred browser **local** or on **browserstack**.
+Diese Umgebung kann verwendet werden, um **E2E-tests** mit **Cypress** einzurichten. Mittels dieser Umgebung ist es möglich Tests gegen emulierte Geräte auf **Browserstack** und gegen **lokale** Browser auszuführen. Im Verzeichnis: *Cypress/e2e* ist eine Datei mit dem Namen: *spec1.cy.js* zu finden. Diese Datei enthält einen bsph. Testcode. Mittels dieser Vorlage können weitere Tests (Specs)im gleichen Verzeichnis angelegt werden.
+Dazu muss eine weitere Datei mit gleicher Endung dem Verzeichnis hinzugefügt werden und der gewünschte Testcode eingegeben werden. Abschließend kann der neue Test mit den unten aufgeführten Befehlen sowohl lokal als auch gegen Browserstack gestartet werden. 
+ 
+[Hier](https://docs.cypress.io/guides/overview/why-cypress) sind Informationen zu Cypress zu finden.<br>
+[Hier](https://docs.cypress.io/examples/examples/recipes) sind Beispiele zu finden.
 
-[Here](https://docs.cypress.io/guides/overview/why-cypress) you can find more information about cypress.<br>
-[Here](https://docs.cypress.io/examples/examples/recipes) you can find a lot of helpful examples.
+## Vorbedingungen
 
-## Preconditions
+* installieren einer IDE (Bspw. Visual Studio Code)
+* installieren von [Git](https://git-scm.com/downloads)
+* installieren von [Node.js](https://nodejs.org/de/download/)
+* klonen dieses Repositories
+* Eingabe des Befehls [npm i]() um alle Abhängigkeiten zu installieren
+* Eingabe der Webadresse, die getestet werden soll: *cypress.config.js* / `baseUrl`
 
-* install an IDE (for example Visual Studio Code)
-* install [git](https://git-scm.com/downloads)
-* install [node.js](https://nodejs.org/de/download/)
-* clone this repository
-* run [npm i]() for install all dependencies
-* enter the web-address from web-application if you want to test: **cypress.config.js** / `baseUrl`
+**Für die Benutzung mit Mocha-Reports:**
 
-**to use local with Mocha-Reporting:**
+Wird eine Testung lokal durchgeführt, werden alle Reports *Reports* Verzeichnis abgelegt. Es ist möglich ein anderes Verzeichnis anzugeben, dazu muss das gewünschte Verzeichnis hier angegeben werden: *cypress.config.js* `reportDir`.
 
-Reports are currently stored in the **reports** directory. The directory can be changed here: **cypress.config.js** `reportDir`.
+**Für die Benutzung mit Browserstack:**
 
-**to use with Browserstack:**
+Bevor eine Testung gegen Browserstack durchgeführt werden kann, wird ein Konto bei Browserstack benötigt. Nach der Anmeldung werden Authentifizierungsdaten präsentiert, die in der folgenden Datei eingetragen werden müssen: *browserstack.json* / `Username` and `access_key`. In der gleichen Datei können die zu testenden Browser und Betriebssysteme unter: *browserstack.json* / `browsers` angegeben werden.
 
-If you want to start a test with **browserstack** you need a **browserstack** account. After you have registered, you will receive authentification data. You have to enter authentification data in the configuration file **browserstack.json** / `Username` and `access_key`. You can use several Browser and Devices with **Browserstack**. Set the Browser and Devices in the same configuration file **browserstack.json** / `browsers`.
+## Starten der Testung
 
-## Start Testing
+Starten eines lokalen Tests oder eines Browserstack Tests. Hierfür sind die folgenden Befehle zu verwenden:
 
-Start a test **local** with **Mocha-Reporting**, with **Browserstack** or use the **Cypress-GUI**. For this enter the following commands in your CLI.
+1. **Öffnen der Cypress Oberfläche**: `npm run CY:open`
 
-1. **Start a local Cypress test with Cypress GUI**: `npm run CY:open` <br>
-Here you can select a browser and a test case and run it locally.<br>
-:information_source: You can use the recorder function to create new test cases. For this use the Cypress-Studio function.
-More information you can find  [here](https://docs.cypress.io/guides/references/cypress-studio#Extending-a-Test). Start with chapter: Step1-Run the spec. The Cypress-Studio function is already switched on in this repository!<br>
-:information_source: No reports are saved when starting a test with Cypress GUI. When Cypress GUI is closed, the test results are no longer visible.
+Hier kann ein Browser und der programierte Testfall ausgewählt und gestartet werden.
 
-2. **Start an local full automatically Cypress test:** `npm run CY:runLocal:all` <br>
-All created tests in E2E-directory will be run. After each test, corresponding reports and videos are stored in the "reports" and "videos" directory. It is also possible to start a specific test. To do this, the command `npm run CY:runLocal: your test name` must be entered. A corresponding script must first be created in **package.json**. Currently all tests are running with Firefox. If you want to test another browser, you can change the browser in **package.json** / `scripts`.
+:information_source: Es ist möglich mit dem Cypress-Studio gewünschte Testschritte aufzuzeichnen. Dazu muss die Studio Funktionalität eingeschaltet sein. In diesem Repository ist diese Funktion bereits aktiv und steht in der Cypress Oberfläche zur Verfügung. Mehr Informationen zum Studio sind [hier](https://docs.cypress.io/guides/references/cypress-studio#Extending-a-Test) zu finden.
 
-**Coming soon:**
+:information_source: Es werden nur zur Laufzeit Auswertungen (Testergebnisse) präsentiert, es findet keine dauerhafte Speicherung statt.
 
-3. **Start a Browserstack test:** `npm run CY:runBrowserstack:all` <br>
-All created tests in **E2E-directory** will be run. It is also possible to start a specific test. To do this, the command `npm run CY:runBrowserstack:your test name` must be entered in your CLI. A corresponding script must first be created in **package.json**.<br>
-:information_source: Runs with browserstack are only possible if you have created a browserstack account.<br>
-:information_source: Reports will be only saved by browserstack. There is no local report cache.
+2. **Starten eines lokalen automatischen Tests:** `npm run CY:runLocal:all`
+
+Alle Tests (Specs) im E2E-Verzeichnis werden ausgeführt. Nach jedem abgeschlossenen Test werden Berichte, Screenshots und Videos im Verzeichnis: *reports*, *videos* and *screenshots* gespeichert. Es ist auch möglich nur einen einzelne Test aus dem E2E-Verzeichnis zu starten. Hierfür wird der Befehl: `npm run CY:runLocal: your test name` eingegeben. Damit der gewünschte Test gestartet werden kann, ist dieser Test zuvor in der *package.json* / `scripts` plus des gewünschten Browsers anzugeben. 
+
+**Diese Funktion ist bald vorhanden:**
+
+3. **Starten eines Browserstack Tests:** `npm run CY:runBrowserstack:all`
+
+Alle Tests (Specs) im E2E-Verzeichnis werden ausgeführt. Nach jedem abgeschlossenen Test werden Berichte, Screenshots und Videos bei Browserstack gespeichert. Es ist auch möglich nur einen einzelne Test aus dem E2E-Verzeichnis zu starten. Hierfür wird der Befehl:<br>
+ `npm run CY:runBrowserstack:your test name` verwendet. Damit der gewünschte Test gestartet werden kann, ist dieser Test zuvor in der *package.json* / `scripts` plus des gewünschten Browsers anzugeben. 
+
+:information_source: Testen mit Browserstack ist möglich, wenn zuvor ein Konto bei Browserstack eingerichtet wurde!
+
+:information_source: Berichte werden nur bei Browserstack gespeichert. Es findet keine lokale Speicherung statt!
