@@ -50,6 +50,6 @@ Alle Tests (Specs) im E2E-Verzeichnis werden ausgeführt. Nach jedem abgeschloss
 Alle Tests (Specs) im E2E-Verzeichnis werden ausgeführt. Nach jedem abgeschlossenen Test werden Berichte, Screenshots und Videos bei Browserstack gespeichert. Es ist auch möglich nur einen einzelne Test aus dem E2E-Verzeichnis zu starten. Hierfür wird der Befehl:<br>
  `npm run CY:runBrowserstack:your test name` verwendet. Damit der gewünschte Test gestartet werden kann, ist dieser Test zuvor in der *package.json* / `scripts` plus des gewünschten Browsers anzugeben. 
 
-:information_source: Testen mit Browserstack ist möglich, wenn zuvor ein Konto bei Browserstack eingerichtet wurde!
+:information_source: Testen mit Browserstack ist nur möglich, wenn zuvor ein Konto bei Browserstack eingerichtet wurde!
 
-:information_source: Berichte werden nur bei Browserstack gespeichert. Es findet keine lokale Speicherung statt!
+:information_source: Berichte werden nur bei Browserstack gespeichert, es findet keine lokale Speicherung statt!
