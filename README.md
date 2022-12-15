@@ -25,7 +25,9 @@ Bevor eine Testung gegen Browserstack durchgeführt werden kann, wird ein Konto 
 
 Starten eines lokalen Tests oder eines Browserstack Tests. Hierfür sind die folgenden Befehle zu verwenden:
 
-### Öffnen der Cypress Oberfläche: `npm run CY:open`
+### Öffnen der Cypress Oberfläche:
+
+`npm run CY:open`
 
 Hier kann ein Browser und der programierte Testfall ausgewählt und gestartet werden.
 
@@ -33,11 +35,15 @@ Hier kann ein Browser und der programierte Testfall ausgewählt und gestartet we
 
 :information_source: Es werden nur zur Laufzeit Auswertungen (Testergebnisse) präsentiert, es findet keine dauerhafte Speicherung statt.
 
-### Starten eines lokalen automatischen Tests: `npm run CY:runLocal:all`
+### Starten eines lokalen automatischen Tests: 
+
+`npm run CY:runLocal:all`
 
 Alle Tests (Specs) im E2E-Verzeichnis werden ausgeführt. Nach jedem abgeschlossenen Test werden Berichte, Screenshots und Videos im Verzeichnis: *reports*, *videos* and *screenshots* gespeichert. Es ist auch möglich nur einen einzelne Test aus dem E2E-Verzeichnis zu starten. Hierfür wird der Befehl: `npm run CY:runLocal: your test name` eingegeben. Damit der gewünschte Test gestartet werden kann, ist dieser Test zuvor in der *package.json* / `scripts` plus des gewünschten Browsers anzugeben. 
 
-### Starten eines Browserstack Tests: `npm run CY:runBrowserstack:all`
+### Starten eines Browserstack Tests:
+
+`npm run CY:runBrowserstack:all`
 
 **Diese Funktion ist bald vorhanden!**
 
