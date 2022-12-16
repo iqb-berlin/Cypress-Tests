@@ -13,7 +13,7 @@ Dazu muss eine weitere Datei mit gleicher Endung dem Verzeichnis hinzugefügt we
 * Eingabe des Befehls [npm i]() um alle Abhängigkeiten zu installieren
 * Eingabe der Webadresse, die getestet werden soll: *cypress.config.js* / `baseUrl`
 
-**Für die Benutzung mit Mocha-Reports:**
+**Für die lokale Benutzung mit Mocha-Berichten:**
 
 Wird eine Testung lokal durchgeführt, werden alle Berichte im *Reports* Verzeichnis abgelegt. Es ist möglich ein anderes Verzeichnis anzugeben, dazu muss das gewünschte Verzeichnis hier angegeben werden: *cypress.config.js* `reportDir`.
 
